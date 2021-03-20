@@ -1,0 +1,109 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;                /* Resetando algumas configurações */
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+/* Formatação do Header */
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* cria um espaço entre a logo da netflix */
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+/* ação com o mouse - mudando a cor de menu */ 
+a:hover {
+    color: #fff;
+}
+
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-the-witcher.jpg');
+    height:400px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* alinha os itens da esquerda para direita */
+}
+
+.descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Formatação dos Botões */
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /* 15px em cima e em baixo e 30px na direita e esquerda do botão */
+    margin-right: 15px;
+    font-size: 12px;
+
+    transition: 1s;
+
+    cursor: pointer; /* mudando o cursor do mouse */
+}
+
+.botao:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 1s ease all; /* tempo de transação das cores do botão */
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;   
+}
+
+.carrosel-filme {
+    margin-top: 5px;
+}
